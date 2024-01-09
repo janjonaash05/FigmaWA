@@ -5,9 +5,13 @@
     --lime: #09ec2e;
     --orange: #ec9f09;
     --magenta: #ec09c7;
+    --limehover: #0ac028;
+    --orangehover: #b97e08;
+    --magentahover: #b20f97;
 
     --black: 	#222222;
     --white: 	#d9d9d9;
+    --whitehover: #b0b0b0;
 
 
 
@@ -119,12 +123,14 @@ body
 
 /*===============================GameList Layout===================================*/
 
+
 .gamelist-header{
     width: 100%;
     padding: 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .gamelist-header h1{
@@ -160,6 +166,10 @@ body
     color: var(--purple);
 }
 
+.gamelist-homebutton:hover{
+    background-color: var(--whitehover);
+}
+
 .gamelist-spacer{
     width:100%;
     border-top: var(--white) dashed 5px;
@@ -193,6 +203,10 @@ body
 
 }
 
+.gamelist-arrow:hover{
+    background-color: var(--whitehover);
+}
+
 .gamelist-arrow > i{
     font-size: 36px;
 }
@@ -200,10 +214,12 @@ body
 .gamelist-list-container{
     width: calc(100% - 140px);
     margin: 0 30px;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
     gap: 30px;
+    position: relative;
 }
+
 
 .gamelist-card{
     height: 100%;
@@ -229,6 +245,57 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.gamelist-list-container::-webkit-scrollbar{
+    display:none;
+}
+
+@media screen and (max-width: 1027px){
+    .gamelist-header{
+        flex-flow: row wrap;
+    }
+    .gamelist-header > h1{
+        flex: 50%;
+    }
+    .gamelist-header > div{
+        order: 3;
+        flex:100%;
+        justify-content: center;
+    }
+    .gamelist-filter-container > a{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .gamelist-filter-container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .gamelist-filter-container > a{
+        width: 100%;
+        margin: 0;
+    }
+    .gamelist-header{
+        margin-bottom: 50px;
+    }
+    .gamelist-list{
+        height: 200px;
+    }
+    .gamelist-arrow{
+        display: none;
+    }
+    .gamelist-list-container{
+        width:100%;
+        margin:0;
+        overflow-x: scroll;
+    }
+    .gamelist-card{
+        width:112px;
+    }
 }
 
 /*---------------------------------GameList Layout---------------------------------*/
