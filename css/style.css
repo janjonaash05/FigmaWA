@@ -21,10 +21,14 @@ body
 {
     
     background-color: var(--purple);
+    width: 90%;
+    margin: 0 auto;
 
 }
 
-header
+/*=================================Index Layout====================================*/
+
+.index-header
 {
     white-space: nowrap;
     display: grid;
@@ -109,4 +113,53 @@ header
     place-items: center;
 
 
+}
+
+/*---------------------------------Index Layout------------------------------------*/
+
+/*===============================GameList Layout===================================*/
+
+.gamelist-header{
+    width: 100%;
+    padding: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamelist-header h1{
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.gamelist-filter-container{
+    display: flex;
+}
+
+.gamelist-filter-container > a{
+    display:block;
+    max-width: 250px;
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 1.3em;
+    margin-right: 20px;
+    color: var(--purple);
+}
+
+.gamelist-filter-container > a > i{
+    font-size: 36px;
+}
+
+.gamelist-homebutton{
+    background-color: var(--white);
+    padding: 0 5px;
+    border-radius:10px;
+}
+
+.gamelist-spacer{
+    width:100%;
+    border-top: var(--white) dashed 5px;
 }
