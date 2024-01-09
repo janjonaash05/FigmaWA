@@ -35,3 +35,14 @@ header
 
 
 }
+
+
+.filter-container
+
+.filter-wrap
+{
+    background-color: var(--white);
+    width: 12vw;
+    height: 12vw;
+
+}
