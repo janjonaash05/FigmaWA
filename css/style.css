@@ -157,9 +157,78 @@ body
     background-color: var(--white);
     padding: 0 5px;
     border-radius:10px;
+    color: var(--purple);
 }
 
 .gamelist-spacer{
     width:100%;
     border-top: var(--white) dashed 5px;
 }
+
+.gamelist-main{
+    margin: 20px 0 50px 0;
+    width: 100%;
+}
+
+.gamelist-main h2{
+    color: var(--white);
+}
+
+.gamelist-list{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.gamelist-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    background-color: var(--white);
+    color:var(--purple);
+    border-radius: 50px;
+
+}
+
+.gamelist-arrow > i{
+    font-size: 36px;
+}
+
+.gamelist-list-container{
+    width: calc(100% - 140px);
+    margin: 0 30px;
+    overflow: hidden;
+    display: flex;
+    gap: 30px;
+}
+
+.gamelist-card{
+    height: 100%;
+    width:150px;
+    background-color: var(--white);
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    flex-shrink: 0;
+}
+.gamelist-card img{
+    height: 80%;
+    width: auto;
+    min-width: 150PX;
+    flex-shrink: 0;
+    flex-wrap: 0;
+}
+
+.gamelist-card-title{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------GameList Layout---------------------------------*/
