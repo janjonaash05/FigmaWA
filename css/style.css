@@ -254,6 +254,7 @@ input[type=text]
     white-space: nowrap;
 
     height: 25%;
+    max-width: 15%;
     min-width: 15%;
     font-size: 3vw;
     border-radius: 50px ;
@@ -269,12 +270,14 @@ input[type=text]
 
 .index-filter-selected-text
 {
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     
-    max-width: 50%;
-    overflow-x: auto;
+    width: 50%;
+    height: 85%
+  
 }
 
 .filter-type-keyword
