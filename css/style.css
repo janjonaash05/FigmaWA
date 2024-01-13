@@ -535,3 +535,47 @@ input[type=text]
 }
 
 /*---------------------------------GameList Layout---------------------------------*/
+
+.gameselect-body {
+    width: 90%;
+}
+
+.gameselect-header {
+    width: 100%;
+    padding: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Change to flex-end to align items to the right */
+    margin-bottom: 25px;
+}
+
+.gameselect-spacer {
+    width: 75%;
+    border-top: var(--white) dashed 5px;
+}
+
+.gameselect-backbutton,
+.gameselect-homebutton {
+    background-color: var(--white);
+    padding: 0 5px;
+    border-radius: 10px;
+    color: var(--purple);
+}
+
+.gameselect-backbutton {
+    margin-right: 15px;
+}
+
+.gameselect-homebutton {
+    margin-left: 15px;
+}
+
+.gameselect-backbutton:hover,
+.gameselect-homebutton:hover {
+    background-color: var(--whitehover);
+}
+
+.doom-eternal-pic{
+    border-radius: 65px; 
+        overflow: hidden;
+}
