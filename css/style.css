@@ -467,6 +467,8 @@ input[type=text]
     align-items: center;
     border-radius: 25px;
     flex-shrink: 0;
+    text-decoration: none;
+    color: var(--black);
 }
 .gamelist-card img{
     height: 80%;
