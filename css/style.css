@@ -67,8 +67,8 @@ body
 
 .index-filter-container
 {
-
-    --margin: 200px;
+    background-color: #222222;
+    --margin: 8vw;
     width: calc(100% - --margin*2) ;
     height: var(--filter-wrap-size);
     margin: 50px var(--margin) ;
@@ -235,15 +235,16 @@ input[type=text]
 
 .index-filter-selection-container
 {
-    --margin: 100px;
+    --margin: 4vw;
     
     border: 10px dashed var(--white);
     width: calc(100% - --margin*2) ;
     height: var(--filter-wrap-size);
     margin: 50px var(--margin) ;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    justify-content: flex-start;
     padding: 0.5%;
 
 }
@@ -270,15 +271,25 @@ input[type=text]
 
 .index-filter-selected-text
 {
-    background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
-    width: 50%;
-    height: 85%
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+    
+    width: 60%;
+    height: 95%
   
 }
+
+
+.index-filter-selected-text::-webkit-scrollbar {
+    
+    display: none;
+  
+  }
 
 .filter-type-keyword
 {
@@ -319,32 +330,86 @@ input[type=text]
 
 }
 
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    
+   
+}
+
+
+
 @media only screen and (max-width: 600px){
     
-
-    .index-filter-container
-    {
-
-        margin: 2vw;
-        flex-direction: column;
-        width: 100%;
-
-
-
-    }
-
-    .index-filter-wrap
-    {
-        width: 100%;
-        height: var(--filter-wrap-size);
-
-    }
-
     :root
     {
 
-        --filter-wrap-size: 90vw;
+        --filter-wrap-size: 26vw;
     }
+
+
+
+    .index-header
+    {
+        font-size: 2em;
+    }
+
+    
+
+    .index-filter-text
+    {
+        font-size: 1em;
+        height: 10%;
+        text-align: center;
+        color: var(--black);
+        margin: 30;
+    }
+
+
+    .index-filter-selected
+    {
+
+        min-width: 45%;
+        max-width: 45%;
+        margin: 2.5%;
+        height: 15%;
+    }
+
+    .index-filter-selected-text
+    {
+
+        font-size: 1.45em;
+    }
+
+    .index-filter-selection-container
+    {
+        height: auto
+    }
+
+    .index-search
+    {
+
+        display: block;
+        width: 90%;
+        margin: 5%;
+        height: 10vh;
+
+        font-size: 3em;
+    }
+    
+
+
+    .index-filter-remove
+{
+
+
+    
+    min-width: 10%;
+    height: auto;
+    
+}
 
 }
 
