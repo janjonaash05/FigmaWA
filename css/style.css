@@ -67,7 +67,7 @@ body
 
 .index-filter-container
 {
-    background-color: #222222;
+    
     --margin: 8vw;
     width: calc(100% - --margin*2) ;
     height: var(--filter-wrap-size);
