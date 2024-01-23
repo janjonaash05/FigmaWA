@@ -611,13 +611,10 @@ input[type=text]
 /*-----------------------------------------------------------------*/
 
 .main-gameselect{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-.description-block {
-   
-}
 
 .gameselect-body {
     width: 90%;
@@ -658,7 +655,13 @@ input[type=text]
     background-color: var(--whitehover);
 }
 
+.gameselect-img {
+    align-items: flex-end;
+}
+
 .doom-eternal-pic{
+    width: 85%;
+    height: 115%;
     border-radius: 65px; 
         overflow: hidden;
 }
@@ -668,9 +671,9 @@ input[type=text]
     margin-top: 19px;
     flex-direction: column;
 }
-  .div-2 {
+  .description {
     color: #fff;
-    text-align: center;
+    text-align: left;
     font: 400 40px Koulen, sans-serif;
   }
 
