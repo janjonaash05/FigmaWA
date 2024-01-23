@@ -239,7 +239,7 @@ input[type=text]
     
     border: 10px dashed var(--white);
     width: calc(100% - --margin*2) ;
-    height: var(--filter-wrap-size);
+    height: auto;
     margin: 50px var(--margin) ;
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +254,7 @@ input[type=text]
     
     white-space: nowrap;
 
-    height: 25%;
+    height: 80px;
     max-width: 15%;
     min-width: 15%;
     font-size: 3vw;
@@ -331,6 +331,14 @@ input[type=text]
 }
 
 
+.index-search > a
+{
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+
 
 
 
@@ -383,10 +391,7 @@ input[type=text]
         font-size: 1.45em;
     }
 
-    .index-filter-selection-container
-    {
-        height: auto
-    }
+    
 
     .index-search
     {
