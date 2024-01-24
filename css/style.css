@@ -692,6 +692,15 @@ input[type=text]
     margin-bottom: 24px;
     font: 400 28px Koulen, sans-serif;
   }
+
+  .Available-on {
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    width: 245px;
+    margin-top: 50px;
+    font: 400 40px Koulen, sans-serif;
+  }
  
  /*-----------------------------------------------------------------*/
 /*---------------------------------GameList Layout---------------------------------*/
