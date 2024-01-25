@@ -693,13 +693,55 @@ input[type=text]
     font: 400 28px Koulen, sans-serif;
   }
 
+  .platforms {
+    align-self: start;
+    display: flex;
+    width: 698px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 65px 0 0 19px;
+  }
+  @media (max-width: 991px) {
+    .platforms {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
   .Available-on {
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  width: 245px;
+  margin: auto 0;
+  font: 400 40px Koulen, sans-serif;
+}
+  
+ 
+  
+  .platform {
     justify-content: center;
-    color: #fff;
+    color: #222;
     text-align: center;
-    width: 245px;
-    margin-top: 50px;
+    white-space: nowrap;
+    border-radius: 55px;
+    background-color: rgba(
+      236.00000113248825,
+      9.000000413507223,
+      199.0000033378601,
+      1
+    );
+    flex-grow: 1;
+    padding: 6px 23px 6px 14px;
     font: 400 40px Koulen, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .platform {
+      white-space: initial;
+      padding-right: 20px;
+    }
   }
 
   .category {
