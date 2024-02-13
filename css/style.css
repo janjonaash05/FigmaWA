@@ -792,53 +792,32 @@ input[type=text]
     font: 400 40px Koulen, sans-serif;
   }
 
+    .steam-button {
+    display: flex;
+   
+    width: 38vw;
+    height: 8vw;
+
+    background-color: var(--white);
+    color: var(--black);
+    margin: 40px auto;
+    border-radius: 20px;
+
+    font-size: 3.5vw;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+    .steam-text {
+        text-decoration: none;
+        color: #000000;
+        
+        font-weight: bold; 
+    }
  
-.main-section {
-  width: 603px;
-  height: 108px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.background-element {
-  width: 603px;
-  height: 104px;
-  background: rgba(217, 217, 217, 1);
-  opacity: 1;
-  position: absolute;
-  top: 2px;
-  left: 0px;
-  border-radius: 25px;
-}
-.visit-text {
-  width: 533px;
-  color: rgba(34, 34, 34, 1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: Koulen;
-  font-weight: Regular;
-  font-size: 60px;
-  opacity: 1;
-  text-align: center;
-}
-.steam_icon {
-  width: 71px;
-  height: 71px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 18px;
-  left: 506px;
-  overflow: hidden;
-}
+
 
 @media (max-width: 991px) {
   .platforms {
