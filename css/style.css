@@ -610,11 +610,10 @@ input[type=text]
 /*---------------------------------GameSelect Layout---------------------------------*/
 /*-----------------------------------------------------------------*/
 
-.main-gameselect{
+.main-gameselect {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
-
 
 .gameselect-body {
     width: 90%;
@@ -683,7 +682,6 @@ input[type=text]
     margin-bottom: 24px;
     font: 400 28px Koulen, sans-serif;
   }
-
   .platforms {
     align-self: start;
     display: flex;
@@ -792,62 +790,59 @@ input[type=text]
     font: 400 40px Koulen, sans-serif;
   }
 
-    .steam-button {
+  .steam-button {
     display: flex;
-   
-    width: 38vw;
-    height: 8vw;
-
     background-color: var(--white);
     color: var(--black);
     margin: 40px auto;
     border-radius: 20px;
-
     font-size: 3.5vw;
-
     justify-content: center;
     align-items: center;
-
-
 }
-    .steam-text {
-        text-decoration: none;
-        color: #000000;
-        
-        font-weight: bold; 
-    }
+.steam-text {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
  
 
 
 @media (max-width: 991px) {
-  .platforms {
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-  .platform {
-    white-space: initial;
-    padding-right: 20px;
-  }
-  .category {
-    max-width: 100%;
-    flex-wrap: wrap;
-  }
-  .categories-div {
-    max-width: 100%;
-    flex-wrap: wrap;
-  }
-  .shooter {
-    padding: 0 20px;
-  }
-  .singleplayer {
-    padding: 0 20px;
-  }
-  .story {
-    padding: 0 20px;
-  }
-  .arena {
-    padding: 0 20px;
-  }
+    .main-gameselect {
+        grid-template-columns: 1fr;
+    }
+
+    .doom-eternal-pic {
+        width: 100%; 
+        max-width: none; 
+        height: auto;
+        max-height: none; 
+        margin-left: 0; 
+        
+    }
+    .about-game-text {
+        margin-top: 20px; 
+    }
+    .platforms {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .platform {
+        white-space: initial;
+        padding-right: 20px;
+    }
+    .category,
+    .categories-div {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .shooter,
+    .singleplayer,
+    .story,
+    .arena {
+        padding: 0 20px;
+    }
 }
 
 
