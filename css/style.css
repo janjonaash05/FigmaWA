@@ -797,14 +797,23 @@ input[type=text]
     margin: 40px auto;
     border-radius: 20px;
     font-size: 3.5vw;
-    justify-content: center;
+    justify-content: space-between; 
     align-items: center;
+    padding-left: 11em; 
 }
+
+.steamlogo {
+    width: 2em; 
+    height: auto; 
+}
+
 .steam-text {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
 }
+
+
  
 
 
